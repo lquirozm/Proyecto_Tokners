@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/century-gothic-paneuropean" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+                
+    <title>Tokners</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Century Gothic Paneuropean', sans-serif;                                       
+        }
+        img{
+            width: 100%;
+        }
+        ul{
+            list-style: none;
+        }
+        .principal{
+            background-color: #121320;
+            background-image: url(https://cristians-12.github.io/Tokners/css/bg.png), url(img/bg-footer.png);
+            background-size: 60%, 80%;
+            background-repeat: no-repeat, no-repeat;
+            background-position: top right, bottom right;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;    
+            color: white;
+            padding: 20px 40px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17.17px;
+        }
+        
+        .navbar .seccion-izq{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+       
+        .navbar .seccion-izq .menu ul{
+            display: flex;
+            gap: 30px;
+        }
+        .navbar .seccion-der{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding-left: 20px;
+        }
+        .navbar .seccion-der .btn-2{
+            border: 2px solid #22a75d;
+            border-radius: 20px;
+            padding: 10px 30px;
+        }
+        /***Boton Burger Menu**/
+        .navbar .btn-menu{
+            width: 30px;
+            display: none;
+        }
+        /*********************/
+       .seccion-izq .menu ul li:hover, .seccion-der .btn-1:hover{
+            color: #005ca9;
+            font-weight: bold;
+        }
+        .seccion-der .btn-2:hover{
+            background-color: #22a75d;
+            color: white;
+            cursor: pointer;
+        }
+        .menu ul li, .seccion-der .btn-2:hover, .seccion-der .btn-1:hover{
+            transition: 0.3s ease-in-out;
+        }
+        /**************Seccion1*****************/
+           .seccion1{
+            display: flex;
+            padding-left: 100px;
+          } 
+        .seccion1 .imagen{
+            width: 70%
+        }
+        .seccion1 .dialogo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            width: 30%;
+        }
+        .seccion1 .dialogo h5{
+            background-image: linear-gradient(92deg, #6a68d9 10%, #da6cae 60%, #f5a957);
+	        -webkit-text-fill-color: #0000;
+	        -webkit-background-clip: text;
+        }
+        .seccion1 .dialogo h1{
+            font-size: 40px;
+            line-height: 1;
+        }
+        .seccion1 .dialogo p{
+            color: #DDE2FF;
+            font-size: 16px;
+            padding-bottom: 20px;
+
+        }
+        .seccion1 .btn-3{
+            border-radius: 30px;
+            background-color: #22a75d;
+            width: 150px;
+            padding: 10px 30px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        /************ Seccion 2 *******************/
+        .seccion2{
+            display: flex;
+            gap: 100px;
+            color: #ffffff;
+            padding: 0px 100px;
+        }
+        .seccion2 .dialogo{
+            width: 50%;
+            background-color: #171B29;
+            border-radius: 20px;
+            padding: 30px 40px;
+            height: fit-content;
+        }
+        .seccion2 .dialogo:nth-child(2){
+            margin-top: 100px;
+        }
+        .seccion2 .dialogo .icono{
+            width: 70px;
+        }
+       
+        .seccion2 .dialogo p{
+            font-size: 13px;
+            color: rgba(255, 255, 255, 0.842);
+        }
+        .seccion2 .dialogo .btn-4{
+            display: flex;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 17.17px;
+            align-items: center;
+            
+        }
+        .seccion2 .dialogo .btn-4 svg{
+            width: 13px;
+            padding-top: 2px;
+        }
+        .verde{
+            text-decoration: underline;
+            color: #22a75d;
+        }
+        .azul{
+            color: #2278D4;
+            text-decoration: underline;
+        }
+
+        .seccion3{
+            display: flex;
+            margin-top: 50px;
+            
+        }
+        .seccion3 .imagen{
+            width: 50%;
+            
+        }
+        .seccion3 .imagen img{
+            height: 100%;
+        }
+        .seccion3 .imagen2{
+            background-color: white;
+            border-top-left-radius: 250px;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 40px;     
+        }
+       
+        .seccion3 .imagen2 h5{
+            width: 60%;
+            color: #0F1320;
+            font-weight: 800;
+            
+        }
+        .seccion3 .imagen2 p{
+            width: 60%;
+            color: #0F1320;
+            text-align: justify;
+            font-size: 14px;
+
+        }
+        .bg-yellow{
+            
+            background-color: #FFD100;
+        }
+        .bg-blue{
+            
+            background-color: #2278D4;
+        }
+        .bg-green{
+       
+            background-color: #22A75D;
+        }
+        .bg-red{
+            
+            background-color: #E20613;
+        }
+        .yellow{
+            color: #FFD100;
+        }
+        .red{
+            color: #E20613;
+        }
+        .flex{
+            display: flex;
+        }
+         .seccion4{
+            /* display: flex; */
+            color: #DDE2FF; 
+            padding-left: 50px;
+            padding-right: 50px;
+            
+        } 
+        .row{
+            margin-right: 0;
+        }
+        .seccion4 .dialogo{
+            padding-top: 100px;
+            padding-bottom: 100px;
+            
+        }
+        .seccion4 .encabezado{
+            display: flex;
+            align-items: center;
+        }
+        .seccion4 .encabezado .circuloPadre{
+            flex-direction: column;
+            gap: 3px;
+        }
+        .seccion4 .circulo{
+            width: 10px;
+            height: 10px;
+            border-radius: 100px;
+            
+        }
+         .seccion4 .icono{
+           width: 100px;
+        }
+        
+        .seccion4 .vector{
+            width: 200px;
+            position: absolute;
+            right:0px;
+            /* margin-top: -150px; */
+            height: fit-content;
+            padding: 0;
+        }
+        .seccion4 .dialogo ul{
+            font-size: 14px;
+        }
+        .seccion5{
+            padding: 0px 100px;
+            gap: 80px;
+        }
+       .seccion5 .dialogo{
+            width: 50%;
+       }
+       .seccion5 .imagen{
+            width: 50%;
+       }
+       .seccion5 .titulo{
+            color: white;
+            gap: 20px;
+            align-items: center;
+            padding-bottom: 20px;
+       }
+       .seccion5 .titulo .logo{
+            width: 50px;
+       }
+       .seccion5 .dialogo p{
+            font-size: 12px;
+            color: white;
+       }
+    
+       .seccion5 .btn-2{
+            border: 2px solid #22a75d;
+            border-radius: 20px;
+            padding: 10px 30px;
+            width: fit-content;
+            color: white;
+            font-size: 14px;
+            font-weight: 700;
+       }
+       .seccion5 .imagen{
+            background-color: #171b29;
+            height: fit-content;
+            border-radius: 20px;
+       }
+       .seccion5 .imagen img{
+            margin-left: -62px;
+       }
+       .seccion6{
+            background-image: url(img/img-sec6.png);
+            background-size: 100%;  
+            background-repeat: no-repeat;
+            height: 930px;
+            justify-content:center;
+            align-items:center;
+            gap: 80px;   
+            flex-direction: column; 
+       }
+       .seccion6 .cartas{
+        gap: 20px;
+        margin-top: -20px;
+       }
+       .seccion6 .carta{
+        flex-direction: column;
+        background-color: white;
+        height: fit-content;
+        width: 300px;
+        border-radius: 20px;
+        align-items: center;
+        padding: 50px 30px;
+       }
+       .seccion6 .carta:nth-child(2){
+        margin-top: 30px;
+       }
+       .seccion6 .carta .icono{
+        width: 50px;
+       }
+       .seccion6 h1{
+        font-size: 22px;
+        font-weight: 700;
+        color: white;
+        margin-top: 170px;
+       }
+       .seccion6 h3{
+        font-size: 16px;
+        font-weight: 700;
+       }
+       .seccion6 p{
+        font-size: 11px;
+        font-weight: 600;
+       }
+       .seccion6 h4{
+        font-size: 14px;
+        font-weight: 700;
+       }
+       .seccion6 h5{
+        font-size: 12px;
+        font-weight: 600;
+       }     
+       .seccion7{
+        color: white;
+        padding: 100px 50px;
+        position: relative;
+       }  
+       .seccion7 h2{
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+       } 
+       .seccion7 h4{
+        font-size: 10px;
+        padding: 10px 10px;
+       }
+       .seccion7 .cartas{
+        gap: 10px;
+        padding-top: 20px;
+        align-items: center;
+       }
+       .seccion7 .carta{
+        background-color: #171b29;
+        border-radius: 20px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+       }
+       .seccion7 .carta2{
+        background-color: #171b29;
+        border-radius: 20px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+       }
+     
+       /* .seccion7 div:nth-child(3){
+        margin-top: 40px;
+       } */
+       .seccion7 h3{
+        font-size: 14px;
+        font-weight: 600;
+        padding: 50px 100px;
+       }
+       .seccion7 .cartas .btnFlecha{
+        padding: 25px 30px;
+        border-radius: 100px;
+        background-color: #0f1320;
+        position: absolute;
+        left: 34%;
+        color: #22A75D;
+       }
+       .seccion7 .cartas .btnFlecha2{
+        padding: 25px 30px;
+        border-radius: 100px;
+        background-color: #0f1320;
+        position: absolute;
+        left: 65%;
+        color: #FFD100;
+       }
+       
+       .footer{
+        color: white;
+        margin-top: 50px;
+       }
+       .footer .seccionArriba ul{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        text-decoration: underline;
+        font-size: 16px;
+        font-weight: 700;
+       }
+      .footer .seccionAbajo{
+        justify-content: space-between;
+        padding: 60px 100px;
+        
+      }
+      .footer .seccionAbajo .logo{
+        width: 150px;
+      }
+      .footer .seccionAbajo .iconos{
+        gap: 10px;
+      }
+      .footer .seccionAbajo .icono{
+        width: 40px;
+      }
+      .footer .seccionAbajo .icono2{
+        width: 40px;
+        border: 1px solid rgb(51, 46, 63);
+        border-radius: 100px;
+        height: 40px;
+        padding: 6px 12px;
+      }
+     
+    </style>
+    <link rel="stylesheet" href="mobile.css">
+</head>
+<body>
+    <div class="principal">
+        <div class="navbar">
+            <div class="seccion-izq">
+                <div class="logo"><img src="img/logo.png" alt="logo"></div>
+                <div class="menu">
+                    <ul>
+                        <li>Our team</li>
+                        <li>Tokens</li>
+                        <li>Connect wallet</li>
+                        <li>Lightpaper</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seccion-der">
+                <div class="btn-1">Sign in</div>
+                <div class="btn-2">Sign up</div>
+            </div>
+            <div class="btn-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ffffff" d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg>
+                </svg>
+            </div>
+        </div>
+        <!-------SECCION 1------->
+        <div class="seccion1">
+            <div class="dialogo">
+                <h5>At Tokners we are</h5>
+                <h1>Reimagining social media through the power of the blockchain.</h1>
+                <p>We are creating social media 3.0 with influencers, celebrities and creators being able to launch their own digital currency by simply creating a profile with media content posted as Non fungible Tokens that can be owned and traded on the Tknrs network</p>
+                <div class="btn-3">Learn More</div>
+            </div>
+            <div class="imagen">
+                <img src="img/img-sec1.png" alt="">
+            </div>
+        </div>
+        <!--------SECCION 2---------->
+        <div class="seccion2">
+            <div class="dialogo">
+                <div class="icono">
+                    <img src="img/img1-sec2.png" alt="">
+                </div>
+                <h2>For <span class="verde">Creators</span></h2>
+                <p>Creators can gain independence through a decentralised digital currency system that is
+                dependent on growing and engaging with the community and also their star power. They own
+                10-15% of the total value of the tokens minted.</p>
+                <div class="btn-4 verde">
+                    Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#22a75d" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                </div>
+            </div>
+            <div class="dialogo">
+                <div class="icono">
+                    <img src="img/img2-sec2.png" alt="">
+                </div>
+                <h2>For <span class="azul">Holders</span></h2>
+                <p>Holding social tokens allows the individual to gain access to benefits including unreleased
+                    content, private communities, direct access to celebrity, early- access to tickets and more as well as the ability to trade with other communities in order to gain access to more creator content with early token buyers being the biggest winners as the value of the token increases with more buyers.
+                </p>
+                <div class="btn-4 azul">
+                    Learn More
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#2278d4" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!--------SECCION 3---------->
+        <div class="seccion3">
+            <div class="imagen"><img src="img/img1-sec3.png" alt=""></div>
+            <div class="imagen2">
+                <h1>What makes us different?</h1>
+                <h5>We would only launch tokens with the express permission of the creators. </h5>
+                <p>There are several thousand celebrities and creators on twitter, tiktok, Instagram and YouTube with followings in the millions who we would be actively engaging before we go viral. </p>
+                <p>We would get them on our
+                    platform and they would see the opportunity to create a fan driven digital economy where their digital content can be traded as NFTs and their most loyal fans can have the monetary value of their creator's currency increase significantly as they promote their digital currency across their channels while our native token holders benefit from the Weentar popularity.</p>
+            </div>
+        </div>
+        <!--------SECCION 4---------->
+        <div class="seccion4 row">
+            <div class="dialogo col-md-3">
+                <div class="encabezado">
+                    <div class="icono">
+                        <img src="img/img1-sec4.png" alt="">
+                    </div>
+                    <div class="circuloPadre flex">
+                        <div class="circulo bg-green"></div>
+                        <h6>2021</h6> 
+                    </div>
+                    
+                </div>
+                <ul>
+                    <li><span class="verde">01</span> Team set-up</li>
+                    <li><span class="verde">02</span> Launch of informational website</li>
+                </ul>
+            </div>
+            <div class="col-md-3 dialogo">
+                <div class="encabezado">
+                    <div class="icono">
+                        <img src="img/img2-sec4.png" alt="">
+                    </div>
+                    <div class="circuloPadre flex">
+                        <div class="circulo bg-blue"></div>
+                        <h6>2021</h6> 
+                    </div>
+                    
+                </div>
+                <ul>
+                    <li><span class="azul">01</span> Presale and exchange listings</li>
+                    <li><span class="azul">02</span> Blockchain developmentand launch</li>
+                    <li><span class="azul">03</span> Launch of our MVP</li>
+                    <li><span class="azul">04</span> Influencer agency partnerships</li>
+                    <li><span class="azul">05</span> Marketing and Promotion</li>
+                </ul>
+            </div>
+            <div class="col-md-3 dialogo">
+                <div class="encabezado">
+                    <div class="icono">
+                        <img src="img/img3-sec4.png" alt="">
+                    </div>
+                    <div class="circuloPadre flex">
+                        <div class="circulo bg-yellow"></div>
+                        <h6>2021</h6> 
+                    </div>
+                    
+                </div>
+                <ul>
+                    <li><span class="yellow">01</span> Celebrity, Creator and Influencer partnerships</li>
+                    <li><span class="yellow">02</span> Expansion of creator communitites on our platform</li>
+                    <li><span class="yellow">03</span> More marketing and promotion</li>
+                </ul>
+            </div>
+            <div class="col-md-3 dialogo">
+                <div class="encabezado">
+                    <div class="icono">
+                        <img src="img/img4-sec4.png" alt="">
+                    </div>
+                    <div class="circuloPadre flex">
+                        <div class="circulo bg-red"></div>
+                        <h6>2021</h6> 
+                    </div> 
+                </div>
+                <ul>
+                    <li><span class="red">01</span> Mainstream partnerships</li>
+                    <li><span class="red">02</span> 500 active creator communities</li>
+                    <li><span class="red">03</span> 2Million active community members</li>
+                    <li><span class="red">04</span> More Marketing and promotion</li>
+                </ul>
+            </div>
+            <div class="vector">
+                <img src="img/Vector.png" alt="">
+            </div>
+        </div>
+        <!---------SECCION 5---------->
+        <div class="seccion5 flex">
+            <div class="dialogo">
+                <div class="titulo flex">
+                    <div class="logo"><img src="img/logo1.png" alt=""></div>
+                    <h1>Tokner is coming</h1>
+                </div>
+                <p>Cryptocurrency adoption is at less than 1% of the global world population with some countries and entities actively fighting against its mass adoption and the smartest developers and nerds holding the fort. </p>
+                <p>Bitcoin was the first, and it has since grown to thousands of tokens launched all aiming to fix one problem or the other with some quite simply FOMOing the moment. Our goal is to bring mass adoption to the cryptocurrency space by dumbing it down. How far down? So down that even a celebrity can explain it in simple words to their followers and have them download an app, buy into the social currency of their favourite person and watch their
+                    investment as is with other crypto currency project. </p>
+                <p>We are trying to do to this space what investment apps did for the "nonexistent retail investors". We are gamefying digital currency, bringing in popular faces instead of hard to understand projects to make it the norm and inadvertently being the "gateway drug" for a lot of people to finally give this space a real look. </p>
+                <p>A new digital economy is coming. People would be just as powerful as countries and creators would be paid beyond the peanuts that conventional social media platforms can offer. </p>
+                <p>There would be new markets and advertisers with little to offer would not find home there. Like Kanye said, </p>
+                <p>"Personalities would become the new currency, and services would be built on top of them". </p>
+                <p>Well, Kanye didn't exactly say that, but it sounds like something we hope he would say.
+                </p>
+                <p>Currency is digital, it has been that way for a while now, but this time there would be no dead presidents on the money, there would people like you on the money, and you would own it because it would make the most sense in the world.</p>
+                <div class="btn-2">Read More</div>
+            </div>
+            <div class="imagen">
+                <img src="img/img-sec5.png" alt="">
+            </div>
+        </div>
+        <!---------SECCION 6------------->
+        <div class="seccion6 flex">
+            <h1>Presale Details</h1>
+            <div class="cartas flex">
+                <div class="carta flex hideMobile">
+                    <div class="icono"><img src="img/img1-sec6.png" alt=""></div>
+                    <h3>Phase One</h3>
+                    <p>0/04/2021 - 16/04/2021</p>
+                    <br><br>
+                    <h4>1 BNB = 100000 WNTR</h4>
+                    <h5>Soft cap: 5000 BNB</h5>
+                    <h5>Hard cap: 10000 BNB</h5>
+                </div>
+                <div class="carta flex">
+                    <div class="icono"><img src="img/img2-sec6.png" alt=""></div>
+                    <h3>Phase Two</h3>
+                    <p>0/04/2021 - 16/04/2021</p>
+                    <br><br>
+                    <h4>1 BNB = 100000 WNTR</h4>
+                    <h5>Soft cap: 5000 BNB</h5>
+                    <h5>Hard cap: 10000 BNB</h5>
+                </div>
+                <div class="carta flex hideMobile">
+                    <div class="icono"><img src="img/img3-sec6.png" alt=""></div>
+                    <h3>Phase Three</h3>
+                    <p>0/04/2021 - 16/04/2021</p>
+                    <br><br>
+                    <h4>1 BNB = 100000 WNTR</h4>
+                    <h5>Soft cap: 5000 BNB</h5>
+                    <h5>Hard cap: 10000 BNB</h5>
+                </div>
+            </div>   
+        </div>
+        <!---------SECCION 7--------->
+        <div class="seccion7">
+            <h2>How to buy</h2>
+            <div class="cartas flex">
+                <div class="carta">
+                    <h4>01</h4>
+                    <h3>First Connect your Metamask or TrustWallet to the "Connect Wallet" on the Homepage.</h3>
+                </div>
+                <div class="btnFlecha">></div>
+                <div class="carta2">
+                    <h4>02</h4>
+                    <h3>Then send minimum of 0.1 BNB or maximum of 10 BNB to the Presale wallet</h3>
+                </div>
+                <div class="btnFlecha2">></div>
+                <div class="carta">
+                    <h4>03</h4>
+                    <h3>Then after you will received your $WNTR to your address within 24hours. </h3>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="seccionArriba">
+                <ul>
+                    <li>OUR TEAM</li>
+                    <li>TOKENS</li>
+                    <li>CONNECT WALLET</li>
+                    <li>LIGHTPAPER</li>
+                </ul>
+            </div>
+            <div class="seccionAbajo flex">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+                <div class="iconos flex">
+                    <div class="icono"><img src="img/twitter.png" alt=""></div>
+                    <div class="icono"><img src="img/telegram.png" alt=""></div>
+                    <div class="icono"><img src="img/instagram.png" alt=""></div>
+                    <div class="icono2"><img src="img/M.png" alt=""></div>
+                    <div class="icono2"><img src="img/github 1.png" alt=""></div>
+                    <div class="icono2"><img src="img/Vector_footer.png" alt=""></div>
+                </div>
+                <div class="copyright"><p>2021 Tokens. All rights reserved.</p></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

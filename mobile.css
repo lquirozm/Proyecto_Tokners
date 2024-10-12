@@ -1,0 +1,138 @@
+@media (max-width: 768px) {
+    .navbar .menu, .navbar .seccion-der{
+        display: none;
+    }
+    .navbar .btn-menu{
+        display: block;
+    }
+    /********  Seccion1   **********/
+    .seccion1{
+        flex-direction: column;
+        padding-left: 0;
+    }
+    .seccion1 .dialogo{
+        width: 100%;
+        /* padding: 0px 20px; */
+    }
+    .seccion1 .dialogo h1{
+        font-size: 45px;
+    }
+    .seccion1 .dialogo p, .seccion1 .dialogo h5{
+        font-size: 18px;
+    }
+    .seccion1 .imagen{
+        width: 100%;
+    }
+    /********* Seccion 2 ********/
+    .seccion2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .seccion2 .dialogo{
+        width: 100%;   
+    }
+    .seccion2 .dialogo:nth-child(2){
+        margin-top: 0;
+    }
+    .seccion2 .dialogo p{
+        font-size: 16px;
+    }
+
+    /******** Seccion 3********/
+    .seccion3{
+        flex-direction: column;
+    }
+    .seccion3 .imagen{
+        width: 100%;
+        transform: scaleX(-1);
+    }
+    .seccion3 .imagen2{
+        width: 100%;
+        border-top-left-radius: 0;
+        border-top-right-radius: 250px;
+        margin-top: -4px;
+        
+    }
+    .seccion3 .imagen2 h1{
+        width: 80%;
+        font-size: 40px;
+    }
+    .seccion3 .imagen2 h5, .seccion3 .imagen2 p{
+        width: 80%;
+        line-height: 24px;
+    }
+    /************** Seccion 4  ************/
+    .seccion4 .dialogo{
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+
+    /********* Seccion 5 **************/
+    .seccion5 {
+        flex-direction: column-reverse;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+    }
+    .seccion5 .dialogo{
+        width: 100%;
+    }
+    .seccion5 .imagen{
+        width: 100%;
+        padding-left: 10px;
+        
+    }
+
+    /***********Seccion 6 ***************/
+    .seccion6{
+        flex-direction: column;
+        background-image: url(img/bg-sec6-mobile.png);
+        background-size: 100%;
+        justify-content: center;
+        gap: 0px;
+    }
+    .hideMobile{
+        display: none!important;
+    }
+    .seccion6 h1{
+        margin-top: -20px;
+    }
+
+    /**********Seccion 7**************/
+    .seccion7{
+        flex-direction: column;
+    }
+    .seccion7 .cartas{
+        flex-direction: column;
+    }
+   .seccion7 .cartas .carta2{
+        margin-top: 0px;
+   }
+
+    .seccion7 .btnFlecha{
+        transform: rotate(90deg);
+        left: 41%!important;
+        top: 36%;
+    }
+    .seccion7 .btnFlecha2{
+        transform: rotate(90deg);
+        left: 41%!important;
+        top: 61%;
+    }
+    /******** Footer ***************/
+    .footer .seccionArriba{
+        display: none;
+    }
+    .footer .seccionAbajo{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 5px 40px;
+    }
+    .footer .seccionAbajo .logo{
+        width: 55%;
+    }
+   
+}
+
+
